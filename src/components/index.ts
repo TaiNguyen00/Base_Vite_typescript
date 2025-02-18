@@ -1,1 +1,1 @@
-export * from './themeControl'
+export * from './themeControl/ThemControl'

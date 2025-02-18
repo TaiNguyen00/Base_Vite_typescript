@@ -1,50 +1,53 @@
-# React + TypeScript + Vite
+# Base Vite TypeScript Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Vite-based React project with TypeScript support. It includes ESLint, Prettier, TailwindCSS, and Husky for better development experience.
 
-Currently, two official plugins are available:
+## 📦 Project Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Make sure you have **Node.js (>=16.x)** installed.
 
-## Expanding the ESLint configuration
+### 1️⃣ Install Dependencies
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Run the following command to install all dependencies:
 
-- Configure the top-level `parserOptions` property like this:
+```sh
+npm install
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2️⃣ Start Development Server
+To start the development server, use:
+npm run dev
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3️⃣ Build for Production
+To build the project for production, use:
+npm run build
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+4️⃣ Preview Production Build
+To preview the production build locally, run:
+npm run preview
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+5️⃣ Lint and Format Code:
+Check for linting errors:
+npm run lint
+Automatically fix linting errors:
+npm run lint:fix
+Check Prettier formatting:
+npm run prettier
+Fix formatting with Prettier:
+npm run prettier:fix
+
+6️⃣ Husky and Lint-Staged
+This project uses Husky to enforce pre-commit checks. To ensure it’s set up correctly, run:
+npm run prepare
+
+🛠️ Technologies Used
+Vite: Fast frontend tooling
+React 18: UI library
+TypeScript: Type safety
+TailwindCSS: Utility-first CSS framework
+ESLint & Prettier: Code linting and formatting
+Husky & Lint-Staged: Git hooks for quality control
+React Router: Navigation management
+
+
+This README provides a clear guide on setting up, running, and maintaining the project. Let me know if you need any modifications! 🚀
+
