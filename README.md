@@ -48,6 +48,28 @@ ESLint & Prettier: Code linting and formatting
 Husky & Lint-Staged: Git hooks for quality control
 React Router: Navigation management
 
+📂 Project Structure
+base_vite_ts/
+│-- src/                  # Source code
+│   ├── assets/       # Reusable React components
+│   ├── components/       # Reusable React components
+│   ├── defines/       # Reusable React components
+│   ├── layouts/       # Reusable React components
+│   ├── pages/            # Page components
+│   ├── routers/            # Page components
+│   ├── styles/           # Global styles (CSS/SCSS)
+│   ├── main.tsx          # Entry point
+│-- public/               # Static assets
+│-- .eslintrc.json        # ESLint configuration
+│-- .prettierrc           # Prettier configuration
+│-- tsconfig.json         # TypeScript configuration
+│-- vite.config.ts        # Vite configuration
+│-- package.json          # Project dependencies and scripts
+│-- README.md 
+│-- .. 
+
+            # Documentation
+
 
 This README provides a clear guide on setting up, running, and maintaining the project. Let me know if you need any modifications! 🚀
 
