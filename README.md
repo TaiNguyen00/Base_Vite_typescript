@@ -51,13 +51,13 @@ React Router: Navigation management
 📂 Project Structure
 base_vite_ts/
 │-- src/                  # Source code
-│   ├── assets/       # Reusable React components
+│   ├── assets/       # Reusable React assets
 │   ├── components/       # Reusable React components
-│   ├── defines/       # Reusable React components
-│   ├── layouts/       # Reusable React components
-│   ├── pages/            # Page components
-│   ├── routers/            # Page components
-│   ├── styles/           # Global styles (CSS/SCSS)
+│   ├── defines/       # Reusable React defines
+│   ├── layouts/       # Reusable React layouts
+│   ├── pages/            # Page pages
+│   ├── routers/            # routers
+│   ├── styles/           # styles (CSS)
 │   ├── main.tsx          # Entry point
 │-- public/               # Static assets
 │-- .eslintrc.json        # ESLint configuration
